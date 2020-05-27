@@ -1,0 +1,89 @@
+evenement_homepage:
+    path:     /
+    defaults: { _controller: EvenementBundle:Default:index }
+evenement_Front:
+    path:     /F
+    defaults: { _controller: EvenementBundle:Evenement:Front }
+evenement_AjoutE:
+    path:     /AjoutE
+    defaults: { _controller: EvenementBundle:Evenement:AjoutEvenement }
+evenement_AfficherE:
+    path:     /AfficheE
+    defaults: { _controller: EvenementBundle:Evenement:AfficheEvenement }
+evenement_AfficheP:
+    path:     /AfficheP
+    defaults: { _controller: EvenementBundle:Evenement:AfficheParticipant }
+evenement_SupprimeP:
+    path:     /SupprimeP/{id}
+    defaults: { _controller: EvenementBundle:Evenement:SupprimeParticipant }
+evenement_ModifieP:
+    path:     /ModifieP/{id}
+    defaults: { _controller: EvenementBundle:Evenement:ModifieParticipant }
+evenement_AjoutP:
+    path:     /AjoutP/{id}
+    defaults: { _controller: EvenementBundle:Evenement:AjoutParticipant }
+evenement_SupprimeE:
+     path:     /SupprimeE/{id}
+     defaults: { _controller: EvenementBundle:Evenement:SupprimeEvenement }
+evenement_ModifierE:
+    path:     /ModifieE/{id}
+    defaults: { _controller: EvenementBundle:Evenement:ModifieEvenement }
+evenement_RechercheE:
+    path:     /RechercheE
+    defaults: { _controller: EvenementBundle:Evenement:RechercheEvenement }
+evenement_RechercheP:
+    path:     /RechercheP
+    defaults: { _controller: EvenementBundle:Evenement:RechercheParticipant }
+evenement_Mail:
+    path:     /mail
+    defaults: { _controller: EvenementBundle:Evenement:Mail }
+
+evenement_pdf:
+    path:     /pdf
+    defaults: { _controller: EvenementBundle:Default:pdf }
+evenement_pdf1:
+    path:     /pdf1
+    defaults: { _controller: EvenementBundle:Default:pdf1 }
+
+
+participant_AfficheE:
+    path:     /fAfficheE
+    defaults: { _controller: EvenementBundle:Participant:AfficheEvenement }
+participant_RechercheE:
+    path:     /fRechercheE
+    defaults: { _controller: EvenementBundle:Participant:RechercheEvenement }
+participant_AjoutP:
+    path:     /fAjoutP/{id}
+    defaults: { _controller: EvenementBundle:Participant:AjoutParticipant }
+participant_form:
+    path:     /form
+    defaults: { _controller: EvenementBundle:Participant:form }
+participant_Mail:
+    path:     /mailP
+    defaults: { _controller: EvenementBundle:Participant:Mail }
+
+
+all_E:
+    path:     /evenement/all
+    defaults: { _controller: EvenementBundle:Evenement:all }
+all_P:
+    path:     /participant/all
+    defaults: { _controller: EvenementBundle:Participant:all }
+new:
+    path:     /new
+    defaults: { _controller: EvenementBundle:Evenement:new }
+delete:
+    path:     /delete
+    defaults: { _controller: EvenementBundle:Evenement:delete }
+edit:
+    path:     /participant/edit
+    defaults: { _controller: EvenementBundle:Evenement:edit }
+all_Ev:
+    path:     /evenement/alll
+    defaults: { _controller: EvenementBundle:Evenement:alll }
+
+login:
+    path:     /loginM/{username}/{password}
+    defaults: { _controller: AppBundle:Mobile:login }
+
+
